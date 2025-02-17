@@ -5,5 +5,8 @@ class CheeseCake(CakeInterface):
     def __init__(self, weightInPounds):
         super().__init__(weightInPounds)
 
-    def bake(self):
-        print("Baking a cheesecake\n")
+    def description(self):
+        return "Baking a cheesecake"
+
+    def getCost(self) -> float:
+        return super().getCost() + (self.weightInPounds*350)

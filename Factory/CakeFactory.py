@@ -5,7 +5,7 @@ from CakeImpl.PlumCake import PlumCake
 
 
 class CakeFactory:
-    def __init__(self, typeOfCake, weightInPounds):
+    def __init__(self, typeOfCake: str, weightInPounds: float):
         self.typeOfCake = typeOfCake
         self.weightInPounds = weightInPounds
 
@@ -17,4 +17,4 @@ class CakeFactory:
                 return PlumCake(self.weightInPounds)
             case "cheese cake":
                 return CheeseCake(self.weightInPounds)
-
+        return None

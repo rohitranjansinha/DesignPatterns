@@ -1,5 +1,5 @@
 class CakeInterface:
-    def __init__(self, weightInPounds=0, cost=0):
+    def __init__(self, weightInPounds=0):
         self.cost = 0.0
         self.weightInPounds = weightInPounds
 

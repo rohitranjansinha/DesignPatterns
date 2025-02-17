@@ -11,4 +11,4 @@ class Message(CakeInterface):
         return self.cake.description() + " Message: " + self.message
 
     def getCost(self) -> float:
-        return self.cake.getCost() + 50.0
+        return self.cake.getCost() + 50.0 if len(self.message)>0.0 else self.cake.getCost()
